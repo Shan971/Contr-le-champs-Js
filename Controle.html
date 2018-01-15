@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="Controle.css">
+<script src="Controle.js"></script>
+<form name="monFormulaire" id="monFormulaire" method="post" onsubmit="return false">
+<div>
+  <label class="label">Votre pseudo :</label>
+  <input class="controle" type="text"id=name="pseudo" pattern="[0-9a-zA-Z-\.]{3,12}" placeholder="De 3 à 12 caractères">
+  <span class="resultat"></span>
+</div>
+<div>
+  <label class="label">Votre mail :</label>
+  <input class="controle" type="email" name="mail" placeholder="mail@serveur.com">
+  <span class="resultat"></span>
+</div>
+<div>
+  <label class="label">Nombre de Persones:</label>
+  <input class="controle" type="number" name="contribution" min="0" max="10" placeholder="Entre 1 et 10">
+  <span class="resultat"></span>
+</div>
+<div>
+  <label class="label">Votre date de venue :</label>
+  <input class="controle" type="date" name="venue" >
+  <span class="resultat"></span>
+</div>
+<div>
+  <input type="submit" value="Envoyer">
+</div>
+</form>
